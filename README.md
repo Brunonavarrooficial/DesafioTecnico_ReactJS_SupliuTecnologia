@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Gerenciador de Discografia - Tião Carreiro e Pardinho 🤠
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Tião Carreiro e Pardinho](./src/assets/img/background.png)
 
-## Available Scripts
+## Desafio
 
-In the project directory, you can run:
+Criar interfaces acessíveis através de um browser que permita o usuário a gerenciar a discografia da dupla caipira Tião Carreiro e Pardinho🤠.
 
-### `npm start`
+### Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- JavaScript
+- React.js
+- Axios
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Iniciando o Projeto
 
-### `npm test`
+Para iniciar o projeto, siga os passos abaixo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone o repositório para a sua máquina local:
 
-### `npm run build`
+    ```
+    git clone https://github.com/Brunonavarrooficial/DesafioTecnico_ReactJS_SupliuTecnologia.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instale as dependências do projeto:
+    ```
+    cd nome-do-repositorio
+    npm install`
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Crie o arquivo `.env` na raiz do projeto e configure as variáveis de ambiente:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```
+    REACT_APP_API_URL=coloque_sua_api
+    REACT_APP_API_KEY=coloque_seu_toquem
+    ```
 
-### `npm run eject`
+4. Inicie o servidor de desenvolvimento:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Abra o projeto no seu navegador:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```
+    http://localhost:3000
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Funcionalidades do Projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Segue abaixo as ações que o usuário poderá executar:
+    - As interfaces foram criadas utilizando a biblioteca React.js 
+    - os métodos da API REST disponível no link https://tiao.supliu.com.br/ foram consumidos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Ver lista de álbuns e faixas
+- Pesquisar álbuns por nome
+- Adicionar um novo álbum
+- Adicionar uma nova faixa em um álbum
+- Excluir uma faixa
+- Excluir um álbum
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Validação de Formulários
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Os formulários têm validações para evitar requisições desnecessárias à API.
 
-### Making a Progressive Web App
+## Responsividade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Foram adicionados @media-query nos arquivos CSS para garantir a responsividade do projeto em dispositivos móveis, tablets e outros.
 
-### Advanced Configuration
+## Transformação de Duração de Faixa
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+No formulário de adicionar faixa, a aplicação permite que você insira o tempo da faixa em segundos completos e automaticamente faz a transformação para minutos e segundos (Exemplo: 195 seg se tornará 3:15 min).
 
-### Deployment
+## Configuração do arquivo .env
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Um arquivo .env-exemplo foi fornecido para configurar as variáveis de ambiente necessárias para o projeto:
+    - Lembre-se de substituir `seu-usuario`, `nome-do-repositorio` e outras informações relevantes pelos valores corretos do seu projeto.
 
-### `npm run build` fails to minify
+#
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<div align ='center'>
+    <h3>Projeto 🤠🎸</h3>
+    <img alt='escopo-projeto' src='./src/assets/img/tiaocarreiro.gif'>
+    <h6>Uma pequena demonstração da interface</h6>
+</div>
+
+- #### . Happy Hacking! 🚀

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AlbumList from './components/AlbumList';
+import AddAlbum from './components/AddAlbum';
+import AddTrack from './components/AddTrack';
+import Header from './components/Header';
+import Search from './components/Search';
+
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="background">
+        <div className="display">
+          <Header />
+          <Search />
+          <Routes>
+            <Route path="/" element={<AlbumList />} />
+            <Route path="/search/" element={<AlbumList />} />
+            <Route path="/search/:searchTerm" element={<AlbumList />} />
+            <Route path="/add" element={<AddAlbum />} />
+            <Route path="/album/:id" element={<AddTrack />} />
+          </Routes>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
+
+
